@@ -127,246 +127,256 @@
         app:layout_constraintTop_toBottomOf="@+id/llStory"
         app:layout_constraintStart_toEndOf="@+id/aasset"/>
 
-    ><ImageView
-    android:id="@+id/fu"
-    android:layout_width="40dp"
-    android:layout_height="40dp"
-    android:layout_marginStart="10dp"
-    android:layout_marginTop="10dp"
-    android:src="@drawable/fufufafa_pp"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/cerita" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cerita">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/fufa"
-        android:layout_width="70dp"
-        android:layout_height="20dp"
-        android:text="Fufufafa"
-        android:textStyle="bold"
-        android:layout_marginStart="10dp"
-        app:layout_constraintStart_toEndOf="@+id/fu"
-        app:layout_constraintTop_toTopOf="@+id/fu"/>
+        <ImageView
+            android:id="@+id/fu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/fufufafa_pp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cerita" />
 
-    <TextView
-        android:id="@+id/pm"
-        android:layout_width="wrap_content"
-        android:layout_height="20dp"
-        android:text="putra mulyono"
-        android:layout_marginStart="10dp"
-        app:layout_constraintStart_toEndOf="@+id/fu"
-        app:layout_constraintBottom_toBottomOf="@+id/fu"/>
+        <TextView
+            android:id="@+id/fufa"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:text="Fufufafa"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@+id/fu"
+            app:layout_constraintTop_toTopOf="@+id/fu"/>
 
-    <ImageView
-        android:id="@+id/titik"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_titik_tiga"
-        android:layout_marginStart="320dp"
-        app:layout_constraintStart_toEndOf="@+id/fu"
-        app:layout_constraintTop_toBottomOf="@+id/fufa"/>
+        <TextView
+            android:id="@+id/pm"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="putra mulyono"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@+id/fu"
+            app:layout_constraintBottom_toBottomOf="@+id/fu"/>
 
-    <ImageView
-        android:id="@+id/postfu"
-        android:layout_width="wrap_content"
-        android:layout_height="300dp"
-        android:src="@drawable/post_fufufafa"
-        android:layout_marginTop="10dp"
-        app:layout_constraintStart_toStartOf="perent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fu"/>
+        <ImageView
+            android:id="@+id/titik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_titik_tiga"
+            android:layout_marginStart="320dp"
+            app:layout_constraintStart_toEndOf="@+id/fu"
+            app:layout_constraintTop_toBottomOf="@+id/fufa"/>
 
-    <ImageView
-        android:id="@+id/iiHeart"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_gravity="center_vertical"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/ic_heart"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/postfu" />
+        <ImageView
+            android:id="@+id/postfu"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:src="@drawable/post_fufufafa"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="perent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fu"/>
 
-    <ImageView
-        android:id="@+id/iicomment"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_gravity="center_vertical"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/ic_comment"
-        app:layout_constraintStart_toEndOf="@+id/iiHeart"
-        app:layout_constraintTop_toBottomOf="@+id/postfu" />
+        <ImageView
+            android:id="@+id/iiHeart"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_heart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/postfu" />
 
-    <ImageView
-        android:id="@+id/iishare"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_gravity="center_vertical"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/ic_share"
-        app:layout_constraintStart_toEndOf="@+id/iicomment"
-        app:layout_constraintTop_toBottomOf="@+id/postfu" />
+        <ImageView
+            android:id="@+id/iicomment"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_comment"
+            app:layout_constraintStart_toEndOf="@+id/iiHeart"
+            app:layout_constraintTop_toBottomOf="@+id/postfu" />
 
-    <ImageView
-        android:id="@+id/iibookmark"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_gravity="center_vertical"
-        android:layout_marginStart="250dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/ic_bookmark"
-        app:layout_constraintStart_toEndOf="@+id/iishare"
-        app:layout_constraintTop_toBottomOf="@+id/postfu" />
+        <ImageView
+            android:id="@+id/iishare"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_share"
+            app:layout_constraintStart_toEndOf="@+id/iicomment"
+            app:layout_constraintTop_toBottomOf="@+id/postfu" />
 
-    <TextView
-        android:id="@+id/like"
-        android:layout_width="wrap_content"
-        android:layout_height="20dp"
-        android:text="Disukai oleh Ikhwan_Hanif"
-        android:layout_marginStart="10dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iiHeart"/>
+        <ImageView
+            android:id="@+id/iibookmark"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_bookmark"
+            app:layout_constraintStart_toEndOf="@+id/iishare"
+            app:layout_constraintTop_toBottomOf="@+id/postfu" />
 
-    <TextView
-        android:id="@+id/fufufafa"
-        android:layout_width="wrap_content"
-        android:layout_height="20dp"
-        android:text="Fufufafa"
-        android:textStyle="bold"
-        android:layout_marginStart="10dp"
-        app:layout_constraintTop_toBottomOf="@+id/like"
-        app:layout_constraintStart_toStartOf="parent"/>
+        <TextView
+            android:id="@+id/like"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Disukai oleh Ikhwan_Hanif"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iiHeart"/>
 
-    <TextView
-        android:id="@+id/proud"
-        android:layout_width="50dp"
-        android:layout_height="20dp"
-        android:text="#Proud"
-        android:layout_marginStart="10dp"
-        android:textColor="@color/blue"
-        app:layout_constraintTop_toBottomOf="@+id/like"
-        app:layout_constraintStart_toEndOf="@+id/fufufafa"/>
+        <TextView
+            android:id="@+id/fufufafa"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Fufufafa"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/like"
+            app:layout_constraintStart_toStartOf="parent"/>
 
-    <ImageView
-        android:id="@+id/as"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/assets_ugm_pp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fufufafa" />
+        <TextView
+            android:id="@+id/proud"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:text="#Proud"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/blue"
+            app:layout_constraintTop_toBottomOf="@+id/like"
+            app:layout_constraintStart_toEndOf="@+id/fufufafa"/>
 
-    <TextView
-        android:id="@+id/ass"
-        android:layout_width="200dp"
-        android:layout_height="20dp"
-        android:text="assets_ugm"
-        android:textStyle="bold"
-        android:layout_marginStart="10dp"
-        app:layout_constraintStart_toEndOf="@+id/as"
-        app:layout_constraintTop_toTopOf="@+id/as"/>
+        <ImageView
+            android:id="@+id/as"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/assets_ugm_pp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fufufafa" />
 
-    <TextView
-        android:id="@+id/sv"
-        android:layout_width="wrap_content"
-        android:layout_height="20dp"
-        android:text="Sekolah Vokasi Universitas Gadjah Mada"
-        android:layout_marginStart="10dp"
-        app:layout_constraintStart_toEndOf="@+id/as"
-        app:layout_constraintBottom_toBottomOf="@+id/as"/>
+        <TextView
+            android:id="@+id/ass"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:text="assets_ugm"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@+id/as"
+            app:layout_constraintTop_toTopOf="@+id/as"/>
 
-    <ImageView
-        android:id="@+id/dot"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_titik_tiga"
-        android:layout_marginStart="320dp"
-        app:layout_constraintStart_toEndOf="@+id/as"
-        app:layout_constraintTop_toBottomOf="@+id/ass"/>
+        <TextView
+            android:id="@+id/sv"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Sekolah Vokasi Universitas Gadjah Mada"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@+id/as"
+            app:layout_constraintBottom_toBottomOf="@+id/as"/>
 
-    <ImageView
-        android:id="@+id/postas"
-        android:layout_width="wrap_content"
-        android:layout_height="300dp"
-        android:src="@drawable/post_asset"
-        android:layout_marginTop="10dp"
-        app:layout_constraintStart_toStartOf="perent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/as"/>
+        <ImageView
+            android:id="@+id/dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_titik_tiga"
+            android:layout_marginStart="320dp"
+            app:layout_constraintStart_toEndOf="@+id/as"
+            app:layout_constraintTop_toBottomOf="@+id/ass"/>
 
-    <ImageView
-        android:id="@+id/iilove"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_gravity="center_vertical"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/ic_heart"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/postas" />
+        <ImageView
+            android:id="@+id/postas"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:src="@drawable/post_asset"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="perent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/as"/>
 
-    <ImageView
-        android:id="@+id/iibuble"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_gravity="center_vertical"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/ic_comment"
-        app:layout_constraintStart_toEndOf="@+id/iilove"
-        app:layout_constraintTop_toBottomOf="@+id/postas" />
+        <ImageView
+            android:id="@+id/iilove"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_heart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/postas" />
 
-    <ImageView
-        android:id="@+id/iikirim"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_gravity="center_vertical"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/ic_share"
-        app:layout_constraintStart_toEndOf="@+id/iibuble"
-        app:layout_constraintTop_toBottomOf="@+id/postas" />
+        <ImageView
+            android:id="@+id/iibuble"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_comment"
+            app:layout_constraintStart_toEndOf="@+id/iilove"
+            app:layout_constraintTop_toBottomOf="@+id/postas" />
 
-    <ImageView
-        android:id="@+id/iibook"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_gravity="center_vertical"
-        android:layout_marginStart="250dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/ic_bookmark"
-        app:layout_constraintStart_toEndOf="@+id/iikirim"
-        app:layout_constraintTop_toBottomOf="@+id/postas" />
+        <ImageView
+            android:id="@+id/iikirim"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_share"
+            app:layout_constraintStart_toEndOf="@+id/iibuble"
+            app:layout_constraintTop_toBottomOf="@+id/postas" />
 
-    <TextView
-        android:id="@+id/Disukai"
-        android:layout_width="wrap_content"
-        android:layout_height="20dp"
-        android:text="Disukai oleh Ikhwan_Hanif"
-        android:layout_marginStart="10dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iilove"/>
+        <ImageView
+            android:id="@+id/iibook"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_bookmark"
+            app:layout_constraintStart_toEndOf="@+id/iikirim"
+            app:layout_constraintTop_toBottomOf="@+id/postas" />
 
-    <TextView
-        android:id="@+id/ast"
-        android:layout_width="wrap_content"
-        android:layout_height="20dp"
-        android:text="Assets UGM"
-        android:textStyle="bold"
-        android:layout_marginStart="10dp"
-        app:layout_constraintTop_toBottomOf="@+id/Disukai"
-        app:layout_constraintStart_toStartOf="parent"/>
+        <TextView
+            android:id="@+id/Disukai"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Disukai oleh Ikhwan_Hanif"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iilove"/>
 
-    <TextView
-        android:id="@+id/prd"
-        android:layout_width="50dp"
-        android:layout_height="20dp"
-        android:text="#Proud"
-        android:layout_marginStart="10dp"
-        android:textColor="@color/blue"
-        app:layout_constraintTop_toBottomOf="@+id/Disukai"
-        app:layout_constraintStart_toEndOf="@+id/ast"/>
+        <TextView
+            android:id="@+id/ast"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Assets UGM"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/Disukai"
+            app:layout_constraintStart_toStartOf="parent"/>
 
+        <TextView
+            android:id="@+id/prd"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:text="#Proud"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/blue"
+            app:layout_constraintTop_toBottomOf="@+id/Disukai"
+            app:layout_constraintStart_toEndOf="@+id/ast"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
