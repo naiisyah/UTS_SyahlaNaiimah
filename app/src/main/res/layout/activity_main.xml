@@ -144,7 +144,7 @@
             android:layout_marginTop="10dp"
             android:src="@drawable/fufufafa_pp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cerita" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/fufa"
@@ -377,6 +377,128 @@
             android:textColor="@color/blue"
             app:layout_constraintTop_toBottomOf="@+id/Disukai"
             app:layout_constraintStart_toEndOf="@+id/ast"/>
+
+            <ImageView
+                android:id="@+id/ligat"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/liga_trpl_pp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ast" />
+
+            <TextView
+                android:id="@+id/trpl"
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:text="Liga TRPL"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                app:layout_constraintStart_toEndOf="@+id/ligat"
+                app:layout_constraintTop_toTopOf="@+id/ligat"/>
+
+            <TextView
+                android:id="@+id/mliga"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Menyambut  Liga TRPL"
+                android:layout_marginStart="10dp"
+                app:layout_constraintStart_toEndOf="@+id/ligat"
+                app:layout_constraintBottom_toBottomOf="@+id/ligat"/>
+
+            <ImageView
+                android:id="@+id/ti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_titik_tiga"
+                android:layout_marginStart="320dp"
+                app:layout_constraintStart_toEndOf="@+id/ligat"
+                app:layout_constraintTop_toBottomOf="@+id/trpl"/>
+
+            <ImageView
+                android:id="@+id/postli"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:src="@drawable/post_liga"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="perent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ligat"/>
+
+            <ImageView
+                android:id="@+id/iihati"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_heart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/postli" />
+
+            <ImageView
+                android:id="@+id/iicom"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_comment"
+                app:layout_constraintStart_toEndOf="@+id/iihati"
+                app:layout_constraintTop_toBottomOf="@+id/postli" />
+
+            <ImageView
+                android:id="@+id/iish"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_share"
+                app:layout_constraintStart_toEndOf="@+id/iicom"
+                app:layout_constraintTop_toBottomOf="@+id/postli" />
+
+            <ImageView
+                android:id="@+id/iibomark"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="250dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_bookmark"
+                app:layout_constraintStart_toEndOf="@+id/iish"
+                app:layout_constraintTop_toBottomOf="@+id/postli" />
+
+            <TextView
+                android:id="@+id/oleh"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Disukai oleh Ikhwan_Hanif"
+                android:layout_marginStart="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iihati"/>
+
+            <TextView
+                android:id="@+id/ligaa"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Liga TRPL"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/oleh"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/pro"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:text="#Proud"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/blue"
+                app:layout_constraintTop_toBottomOf="@+id/oleh"
+                app:layout_constraintStart_toEndOf="@+id/ligaa"/>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
